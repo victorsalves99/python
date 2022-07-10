@@ -15,7 +15,7 @@ while res!='n'or res!='N':
     print('-'*60)
     while cont<palpite:
         while len(quina)!=5:
-            numero=random.randint(1,60)
+            numero=random.randint(1,80)
             if numero not in quina:
                 quina.append(numero)
         quina.sort()
