@@ -10,19 +10,18 @@ while True:
         break
     
 print('-='*30)
-print('No.   Nome               Média ')
+print(f'{"No.":<4}{"Nome":<10}{"Média":>10} ')
 print('-'*30)
 for pos,c in enumerate(ficha):
-    print(f'{pos:^3}',end='   ')
-    print(f'{ficha[pos][0]:<10}',end='          ')
-    print(f'{ficha[pos][2]}')
+    print(f'{pos:<4}{ficha[pos][0]:<10}{ficha[pos][2]:>10}')
 print('-'*30)
 resp=0
 while True:
     resp=int(input('Mostrar a nota de qual aluno ? :digite 999 pra interromper:  '))
-    print(f'As notas de {ficha[resp][0]} são {ficha[resp][1]}')
     if resp==999:
         break
+    print(f'As notas de {ficha[resp][0]} são {ficha[resp][1]}')
+    
     
 
 
