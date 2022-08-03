@@ -1,7 +1,5 @@
 from time import sleep
-def analise(*num,a=0) :
-    if len(num)==0:
-        num=0
+def analise(*num):
     print('-='*30)
     print(f'Analisando valores : ')
     for c in num:
